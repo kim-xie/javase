@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>javase数据类型</title>
+  <style type="text/css">
+	*{padding:0;margin:0;}
+	a{text-decoration:none;}
+	ul,ol li{list-style:none}
+	body{font-size:12px;font-family:"微软雅黑";}
+
+  </style>
+ </head>
+ <body>
+ <div></div>
+  <script type="text/javascript">
+  /*
+	=================================javase数据类型=================================
+
+	javase数据类型：
+		1、基础数据类型：
+			整型：
+				byte -- 1字节  -- 范围 (-128~127)
+				short -- 2字节  -- 范围 
+				int -- 4字节  -- (一般都使用)范围够大--避免byte\short进行算术运算
+				long -- 8字节  -- (末尾要加l或者L)
+
+			浮点型：(默认为duoble类型)
+				float(单精度)  -- 4字节 -- (末尾要加f或者F)
+				double(双精度)  -- 8字节 -- (末尾可加D\d可不加)
+
+			字符型：char
+
+			布尔型：
+				true  
+				false
+
+		
+		2、引用数据类型：
+			数组：[]
+			对象：{}
+
+
+	数据类型转换：
+		1、自动类型转换：
+			double>float>long>int>short>byte
+			小可以自动转为大的
+		2、强制类型转换：(不推荐使用，会出现精度丢失,不会四舍五入,直接舍掉小数)
+			大不可以自动转为小
+			格式：double money = 58.89; --- int m = (int)money;
+
+
+	进制数：
+		二进制：由0、1组成
+		八进制：由0、1、2、3、4、5、6、7组成  以0开头   如：013
+		十进制：由0、1、2、3、4、5、6、7、8、9组成
+		十六进制：由0-9、a-f组成  以0x开头  如：0x9af
+
+		进制数转换：
+			其他进制转为十进制：
+				八进制转为十进制：int a = Integer.parseInt("013",8);
+				二进制转为十进制：int a = Integer.parseInt("1010",2);
+				十六进制转为十进制：int a = Integer.parseInt("0x1f",16);
+
+			十进制转为其他进制：
+				十进制转为二进制：string a = Integer.tostring("",2);
+				十进制转为八进制：string a = Integer.tostring("",8);
+				十进制转为十六进制：string a = Integer.tostring("",16);
+
+			二进制转为八进制:(分为3位一组,然后拼接)
+
+			二进制转为十进制:(每一位乘以2^位数-1,然后累加)
+
+			二进制转为十六进制:(分为4位一组,然后拼接)
+
+			十进制转为八进制：(十进制数/8取余和商)
+
+	
+	
+	======================================变量======================================
+  
+	javase变量：
+		格式：数据类型  变量名 = 字面值;(;一定要有否则报错)
+
+		数据类型 -- 决定在jvm中开辟内存空间的大小;
+		变量名 -- 具有唯一性,不可重名否则无意义,
+		字面值 -- 赋给变量名的真实值,根据字面值决定具体的数据类型;
+
+		标识符命名规则：以字母、_、$开头,其他随便(关键字除外)除开特殊字符(#@)空格等。
+
+		java程序编译：javac keke.java
+		java执行程序：java keke
+
+
+		内存空间：堆空间 + 栈空间
+
+
+
+  */
+  </script>
+ </body>
+</html>
